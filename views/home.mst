@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{{ h.defaultPageTitle }}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="card w-50 m-5">
+            <div class="card-body">
+                <div class="card-title">Chamar paciente</div>
+                <div class="form-group">
+                <form method="post" action="\screen">
+                    <label for="nomePaciente">Paciente</label>
+                    <input type="text" id="nomePaciente" name="nomePaciente" class="form-control" required="true">
+                    <label for="consultorio">consultório</label>
+                    <select name="consultorio" id="consultorio" class="form-control">
+                        <option value="consultório 1">Consultório 1</option>
+                        <option value="consultório 2">Consultório 2</option>
+                        <option value="consultório 3">Consultório 3</option>
+                    </select>
+                    <button class="mt-4 btn btn-primary btn-lg" id="btnFalar">Falar</button>
+                </form>
+                </div>
+            </div>
+            <div class="card-footer">
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/home.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
